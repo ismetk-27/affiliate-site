@@ -111,7 +111,8 @@ h2 {
 /* VIP sponsor kutusu */
 .vip-card {
   background: rgba(22, 29, 58, 0.95);
-  border: 1px solid #e0c878;
+  border: 1px solid 
+    e0c878;
   border-radius: 12px;
   padding: 20px;
   text-align: center;
