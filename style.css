@@ -1,0 +1,322 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #0A0F2C;
+  background-image: url('assets/img/background.jpg'); /* ← BURAYA ARKAPLAN GÖRSELİNİ KOYACAKSIN */
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #e0c878;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #e0c878;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  color: #e0c878;
+}
+
+nav.social a {
+  color: #e0c878;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav.social a:hover {
+  color: #ffffff;
+}
+
+/* MAİN */
+main {
+  padding: 30px 0;
+}
+
+h2 {
+  border-left: 4px solid #e0c878;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+/* === ANA SPONSOR ALANI - Responsive Grid === */
+.sponsor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* 4’lü yapıya uygun */
+  gap: 20px;
+}
+
+/* Her sponsor kartı */
+.sponsor-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(18, 25, 53, 0.95);
+  border: 1px solid #e0c878;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover efekti */
+.sponsor-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(224, 200, 120, 0.5);
+}
+
+/* Görsel boyutları */
+.sponsor-card img {
+  width: 100%; /* Kartın genişliğine tam oturur */
+  max-height: 160px; /* Max yüksekliği sınırla ama esnek bırak */
+  object-fit: contain; /* Görseli orantılı şekilde sığdır */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Marka ismi */
+.sponsor-card p {
+  color: #e0c878;
+  font-weight: 500;
+  margin: 0;
+}
+
+
+/* VIP */
+/* === VIP SPONSOR ALANI === */
+.sponsor-grid,
+.vip-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Her zaman 4 kolon */
+  gap: 20px;
+  justify-content: center;
+}
+
+/* VIP sponsor kutusu */
+.vip-card {
+  background: rgba(22, 29, 58, 0.95);
+  border: 1px solid #e0c878;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+/* Mobilde 2’li sisteme geç */
+@media (max-width: 768px) {
+  .sponsor-grid,
+  .vip-grid {
+    grid-template-columns: repeat(2, 1fr); /* Mobilde 2 kolon */
+  }
+}
+
+/* Hover efekti */
+.vip-card:hover {
+  box-shadow: 0 0 15px rgba(224, 200, 120, 0.4);
+}
+
+/* VIP firma logosu */
+.vip-card img {
+  max-width: 100%;
+  max-height: 120px; /* Tavsiye edilen logo yüksekliği */
+  object-fit: contain;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+/* Başlık */
+.vip-card h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #f0e5c0;
+}
+
+/* Açıklama */
+.vip-card p {
+  margin: 0 0 10px;
+  color: #e0c878;
+  font-size: 14px;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #e0c878;
+  color: #0a0f2c;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #fffbe6;
+  color: #000;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #e0c878;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+/* SAĞ POPUP */
+.popup-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(18, 25, 53, 0.95);
+  border: 1px solid #e0c878;
+  border-radius: 10px;
+  padding: 15px 20px;
+  z-index: 999;
+  width: 260px;
+  box-shadow: 0 0 15px rgba(224, 200, 120, 0.3);
+}
+
+.popup h4 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  color: #f6d878;
+}
+
+
+
+
+.fixed-banner.left-banner {
+  position: fixed;
+  top: 100px;
+  left: 20px;
+  z-index: 1000;
+  width: 140px;
+}
+
+.banner-inner {
+  background-color: rgba(18, 25, 53, 0.95);
+  border: 1px solid #e0c878;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(224, 200, 120, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.banner-inner:hover {
+  box-shadow: 0 0 25px rgba(224, 200, 120, 0.6);
+  transform: scale(1.03);
+}
+
+.banner-inner img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.fixed-banner.right-banner {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  z-index: 1000;
+  width: 140px;
+}
+
+
+/* === Kapatma Butonu (X) === */
+.close-btn {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  background: none;
+  color: #e0c878;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1001;
+  font-weight: bold;
+}
+
+.close-btn:hover {
+  color: #ffffff;
+}
+
+/* === MOBİL SLIDER STİLLERİ === */
+.mobile-banner-slider {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .fixed-banner {
+    display: none;
+  }
+
+  .mobile-banner-slider {
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    width: calc(100% - 20px);
+    z-index: 999;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(224, 200, 120, 0.3);
+    background-color: rgba(18, 25, 53, 0.95);
+    border: 1px solid #e0c878;
+    padding: 10px;
+  }
+
+  .mobile-banner-slider .slide {
+    display: none;
+  }
+
+  .mobile-banner-slider .slide.active {
+    display: block;
+    animation: fadein 0.5s ease;
+  }
+
+  .mobile-banner-slider img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  @keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .mobile-banner-slider .close-btn {
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    background: none;
+    border: none;
+    color: #e0c878;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  .mobile-banner-slider .close-btn:hover {
+    color: white;
+  }
+}

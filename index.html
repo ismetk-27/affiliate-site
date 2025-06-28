@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GoldBookie Affiliate</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<script>
+  let sliderInterval;
+
+  function showNextSlide() {
+    const slides = document.querySelectorAll('.mobile-banner-slider .slide');
+    const current = document.querySelector('.mobile-banner-slider .slide.active');
+    let index = Array.from(slides).indexOf(current);
+
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+  }
+
+  function closeSlider() {
+    clearInterval(sliderInterval);
+    document.getElementById('mobileSlider').style.display = 'none';
+  }
+
+  // Başlangıçta başlat
+  document.addEventListener("DOMContentLoaded", () => {
+    sliderInterval = setInterval(showNextSlide, 1000);
+  });
+</script>
+</body>
+</html>
+<!-- SOL SABİT BANNER -->
+<div class="fixed-banner left-banner" id="leftBanner">
+  <button class="close-btn" onclick="document.getElementById('leftBanner').style.display='none'">×</button>
+  <div class="banner-inner">
+    <a href="#">
+      <img src="assets/img/fixbet-banner.png" alt="Fixbet">
+    </a>
+  </div>
+</div>
+  
+  <!-- SAĞ SABİT BANNER -->
+<div class="fixed-banner right-banner" id="rightBanner">
+  <button class="close-btn" onclick="document.getElementById('rightBanner').style.display='none'">×</button>
+  <div class="banner-inner">
+    <a href="#">
+      <img src="assets/img/matadorbet-banner.png" alt="Matadorbet">
+    </a>
+  </div>
+</div>
+
+
+  <!-- Ana Sayfa İçeriği -->
+  <div class="container">
+    <header>
+      <div class="logo">GoldBookie</div>
+      <nav class="social">
+        <a href="#">Telegram</a>
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+      </nav>
+    </header>
+
+    <main>
+<section class="sponsor-section">
+  <h2>Ana Sponsorlar</h2>
+  <div class="sponsor-grid">
+    
+    <!-- Sponsor Kartı 1 -->
+    <div class="sponsor-card">
+      <img src="assets/img/sponsor1.png" alt="RAMADABET">
+      <p>RAMADABET</p>
+    </div>
+
+    <!-- Sponsor Kartı 2 -->
+    <div class="sponsor-card">
+      <img src="assets/img/sponsor2.png" alt="BETEWIN">
+      <p>BETEWIN</p>
+    </div>
+
+    <!-- Sponsor Kartı 3 -->
+    <div class="sponsor-card">
+      <img src="assets/img/sponsor3.png" alt="FESTWIN">
+      <p>QFESTWIN</p>
+    </div>
+    <!-- Sponsor Kartı 3 -->
+    <div class="sponsor-card">
+      <img src="assets/img/sponsor3.png" alt="FESTWIN">
+      <p>FESTWIN</p>
+    </div>
+    <!-- Sponsor Kartı 4 -->
+    <div class="sponsor-card">
+      <img src="assets/img/sponsor4.png" alt="GOLDWIN">
+      <p>GOLDWIN</p>
+    </div>
+
+  </div>
+</section>
+
+    <section class="vip-section">
+  <h2>VIP Sponsorlar</h2>
+  <div class="vip-grid">
+
+    <!-- VIP Kart 1 -->
+    <div class="vip-card">
+      <img src="assets/img/vip1.png" alt="FIXBET">
+      <h3>FIXBET</h3>
+      <p>555₺ Deneme Bonusu!</p>
+      <a href="#" class="btn">Giriş Yap</a>
+    </div>
+
+    <!-- VIP Kart 2 -->
+    <div class="vip-card">
+      <img src="assets/img/vip2.png" alt="GANOBET">
+      <h3>GANOBET</h3>
+      <p>1000₺ Bonus! %100 İade</p>
+      <a href="#" class="btn">Giriş Yap</a>
+    </div>
+
+    <!-- VIP Kart 3 -->
+    <div class="vip-card">
+      <img src="assets/img/vip3.png" alt="BETPRO">
+      <h3>BETPRO</h3>
+      <p>700₺ Yatırımsız Bonus</p>
+      <a href="#" class="btn">Giriş Yap</a>
+    </div>
+        <!-- VIP Kart 3 -->
+    <div class="vip-card">
+      <img src="assets/img/vip3.png" alt="BETPRO">
+      <h3>BETPRO</h3>
+      <p>700₺ Yatırımsız Bonus</p>
+      <a href="#" class="btn">Giriş Yap</a>
+    </div>
+
+    <!-- VIP Kart 4 -->
+    <div class="vip-card">
+      <img src="assets/img/vip4.png" alt="WINRUSH">
+      <h3>WINRUSH</h3>
+      <p>%200 Hoş Geldin Bonusu</p>
+      <a href="#" class="btn">Giriş Yap</a>
+    </div>
+
+  </div>
+<!-- MOBİL ALT BANNER SLIDER (Sadece mobilde gösterilir) -->
+<div class="mobile-banner-slider" id="mobileSlider">
+  <button class="close-btn" onclick="closeSlider()">×</button>
+
+  <div class="slide active">
+    <img src="assets/img/fixbet-banner.png" alt="Fixbet" />
+  </div>
+  <div class="slide">
+    <img src="assets/img/matadorbet-banner.png" alt="Matadorbet" />
+  </div>
+</div>
+</div>
+</section>
