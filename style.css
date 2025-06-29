@@ -48,10 +48,18 @@ main {
 }
 
 h2 {
-  border-left: 4px solid #e0c878;
-  padding-left: 10px;
+  width: 100%; /* Container kadar genişlik */
+  background: linear-gradient(145deg, #f0d878, #d9b85c); /* Altın geçiş */
+  color: #0A0F2C;
+  border-radius: 12px;
+  padding: 12px 20px;
+  font-size: 20px;
+  font-weight: 700;
   margin-bottom: 20px;
-  font-size: 22px;
+  box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.4),
+              inset -2px -2px 5px rgba(0, 0, 0, 0.2),
+              0 2px 6px rgba(224, 200, 120, 0.4);
+  box-sizing: border-box; /* Padding dışına taşma olmasın */
 }
 
 /* === ANA SPONSOR ALANI - Responsive Grid === */
