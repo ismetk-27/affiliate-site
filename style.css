@@ -126,7 +126,9 @@ h2 {
 .sponsor-card:hover {
   box-shadow: 0 0 15px rgba(224, 200, 120, 0.4);
 }
-
+.sponsor-card:hover .hover-overlay {
+  opacity: 1;
+}
 
 
 /* VIP */
