@@ -205,7 +205,7 @@ footer {
 /* SAĞ POPUP */
 .popup-box {
   position: fixed;
-  bottom: px;
+  bottom: 20px;
   right: 20px;
   background: rgba(18, 25, 53, 0.95);
   border: 1px solid #e0c878;
@@ -281,7 +281,7 @@ footer {
   backdrop-filter: none;
   transition: backdrop-filter 0.3s ease, opacity 0.3s ease;
   z-index: 1;
-
+}
 /* GÖRSELİ BLUR YAP */
 
 .banner-img-wrapper {
@@ -338,7 +338,7 @@ footer {
   .fixed-banner {
     display: none;
   }
-  @media (max-width: 768px) {
+
   .sponsor-grid,
   .vip-grid {
     grid-template-columns: repeat(2, 1fr); /* Mobilde 2 sütun */
@@ -349,9 +349,9 @@ footer {
     display: block;
     position: fixed;
     bottom: 10px;
-    left: 10px;
-    right: 10px;
-    width: calc(100% - 20px);
+    left: 300px;
+    right: 300px;
+    
     z-index: 999;
     border-radius: 12px;
     overflow: hidden;
@@ -404,3 +404,10 @@ footer {
   .mobile-banner-slider .close-btn:hover {
     color: white;
   }
+.slide-text {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #e0c878;
+  font-weight: 600;
+}
