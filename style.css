@@ -91,7 +91,7 @@ h2 {
 .sponsor-logo {
   display: block;           /* Satır içi değil blok gibi davransın */
   margin: 8px auto 0 auto;  /* Üstten 8px boşluk, yatayda ortala */
-  max-width: 100px;         /* Genişliği taşırmasın */
+  max-width: 305px;         /* Genişliği taşırmasın */
   height: auto;             /* Oran korunsun */
   object-fit: contain;      /* Logonun içeriği sıkışmasın */
 }
