@@ -3,7 +3,7 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: #0A0F2C;
   background-image: url('assets/img/background.png'); /* Küçük ikon, desen, vs. */
-  background-size: 250px; /* Görselin tekrar boyutu */
+  background-size: 175px; /* Görselin tekrar boyutu */
   background-repeat: repeat; /* Her yöne döşeme */
   background-attachment: fixed;
   color: #e0c878;
