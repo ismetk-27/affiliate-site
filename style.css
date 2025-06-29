@@ -205,7 +205,7 @@ footer {
 /* SAĞ POPUP */
 .popup-box {
   position: fixed;
-  bottom: 20px;
+  bottom: px;
   right: 20px;
   background: rgba(18, 25, 53, 0.95);
   border: 1px solid #e0c878;
@@ -223,14 +223,19 @@ footer {
 }
 
 
-
-
-.fixed-banner.left-banner {
+.fixed-banner {
   position: fixed;
   top: 100px;
-  left: 20px;
   z-index: 1000;
   width: 140px;
+}
+
+.fixed-banner.left-banner {
+  left: 20px;
+}
+
+.fixed-banner.right-banner {
+  right: 20px;
 }
 
 .banner-inner {
@@ -238,27 +243,50 @@ footer {
   border: 1px solid #e0c878;
   border-radius: 12px;
   padding: 10px;
-  box-shadow: 0 0 10px rgba(224, 200, 120, 0.2);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 0 10px rgba(224, 200, 120, 0.3);
+  animation: glowPulse 2s infinite ease-in-out;
+  overflow: hidden;
+  text-align: center;
+  transition: filter 0.3s ease;
+  position: relative;
 }
 
 .banner-inner:hover {
-  box-shadow: 0 0 25px rgba(224, 200, 120, 0.6);
-  transform: scale(1.03);
+  filter: blur(3px);
+}
+
+.banner-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: none;
+  transition: backdrop-filter 0.3s ease, opacity 0.3s ease;
+  z-index: 1;
+}
+
+.banner-inner:hover .banner-content {
+  backdrop-filter: none;
+  opacity: 1;
 }
 
 .banner-inner img {
   width: 100%;
-  display: block;
   border-radius: 8px;
+  transition: opacity 0.3s ease;
 }
 
-.fixed-banner.right-banner {
-  position: fixed;
-  top: 100px;
-  right: 20px;
-  z-index: 1000;
-  width: 140px;
+.banner-text {
+  color: #e0c878;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 8px;
 }
 
 
@@ -327,10 +355,17 @@ footer {
     border-radius: 10px;
   }
 
-  @keyframes fadein {
-    from { opacity: 0; }
-    to { opacity: 1; }
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 5px rgba(224, 200, 120, 0.3);
   }
+  50% {
+    box-shadow: 0 0 15px rgba(224, 200, 120, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(224, 200, 120, 0.3);
+  }
+}
 
   .mobile-banner-slider .close-btn {
     position: absolute;
