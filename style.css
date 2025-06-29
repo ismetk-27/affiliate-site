@@ -63,69 +63,44 @@ h2 {
 
 /* Her sponsor kartı */
 .sponsor-card {
-  position: relative;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: rgba(18, 25, 53, 0.95);
   border: 1px solid #e0c878;
   border-radius: 12px;
-  padding: 6px;
+  padding: 15px;
   text-align: center;
-  width: 200px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
-.sponsor-img-wrapper {
-  position: relative;
-  overflow: hidden;
+/* Hover efekti */
+.sponsor-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(224, 200, 120, 0.5);
 }
 
-.sponsor-img {
-  width: 100%;
-  display: block;
-  transition: filter 0.3s ease;
+/* Görsel boyutları */
+.sponsor-card img {
+  width: 100%; /* Kartın genişliğine tam oturur */
+  max-height: 160px; /* Max yüksekliği sınırla ama esnek bırak */
+  object-fit: contain; /* Görseli orantılı şekilde sığdır */
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
-.hover-overlay {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(10, 15, 44, 0.7);
+/* Marka ismi */
+.sponsor-card p {
   color: #e0c878;
-  font-weight: 600;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  padding: 10px;
-  text-align: center;
-  line-height: 1.4;
-  box-sizing: border-box;
-  overflow: hidden;
-  word-break: break-word;     /* ← uzun kelimeleri taşırmaz */
-}
-
-.sponsor-card:hover .sponsor-img {
-  filter: blur(2px);
-}
-
-.sponsor-card:hover .hover-overlay {
-  opacity: 1;
-}
-
-/* Logo alt kısımdaki yazı yerine eklenecek */
-.sponsor-logo {
-  margin-top: 8px;
-  max-width: 80px;
-  height: auto;
+  font-weight: 500;
+  margin: 0;
 }
 
 
 /* VIP */
 /* === VIP SPONSOR ALANI === */
-.sponsor-grid,
+
 .vip-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* Her zaman 4 kolon */
@@ -136,19 +111,11 @@ h2 {
 /* VIP sponsor kutusu */
 .vip-card {
   background: rgba(22, 29, 58, 0.95);
-  border: 1px solid 
-    e0c878;
+  border: 1px solid #e0c878;
   border-radius: 12px;
   padding: 20px;
   text-align: center;
   transition: box-shadow 0.3s ease;
-}
-/* Mobilde 2’li sisteme geç */
-@media (max-width: 768px) {
-  .sponsor-grid,
-  .vip-grid {
-    grid-template-columns: repeat(2, 1fr); /* Mobilde 2 kolon */
-  }
 }
 
 /* Hover efekti */
