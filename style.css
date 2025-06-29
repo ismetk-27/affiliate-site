@@ -344,7 +344,7 @@ footer {
     grid-template-columns: repeat(2, 1fr); /* Mobilde 2 sütun */
   }
 }
-
+ 
   .mobile-banner-slider {
     display: block;
     position: fixed;
