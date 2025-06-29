@@ -55,59 +55,42 @@ h2 {
 }
 
 /* === ANA SPONSOR ALANI - Responsive Grid === */
-.sponsor-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* 4’lü yapıya uygun */
-  gap: 20px;
-  justify-content: center;
-}
-
-@media (max-width: 768px) {
-  .sponsor-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Sponsor kartı */
 .sponsor-card {
   position: relative;
   overflow: hidden;
   background: rgba(18, 25, 53, 0.95);
   border: 1px solid #e0c878;
   border-radius: 12px;
+  padding: 1px; /* Sadece 1px iç boşluk */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 0 10px rgba(224, 200, 120, 0.2);
 }
 
-.sponsor-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 20px rgba(224, 200, 120, 0.4);
+/* Resmi ortalamak için wrapper */
+.sponsor-img-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Logo alanı */
-.sponsor-card img.sponsor-img {
+/* Logo boyutu */
+.sponsor-img {
   width: 100%;
-  height: 140px; /* sabit yükseklik daha düzenli görünüm sağlar */
+  height: auto;
   object-fit: contain;
+  transition: filter 0.3s ease;
   display: block;
   border-radius: 10px;
-  transition: filter 0.3s ease;
 }
 
-.sponsor-card:hover .sponsor-img {
-  filter: blur(2px);
-}
-
-/* Hover overlay */
-.sponsor-card .hover-overlay {
+/* Hover'da çıkan metin */
+.hover-overlay {
   position: absolute;
   top: 0; left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(10, 15, 44, 0.7);
   color: #e0c878;
-  font-weight: 600;
-  font-size: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,13 +98,21 @@ h2 {
   transition: opacity 0.3s ease;
   padding: 10px;
   text-align: center;
+  font-size: 14px;
+  font-weight: 600;
   line-height: 1.4;
   box-sizing: border-box;
 }
 
-.sponsor-card:hover .hover-overlay {
-  opacity: 1;
+/* Hover efekti aktif */
+.sponsor-card:hover .sponsor-img {
+  filter: blur(2px);
 }
+
+.sponsor-card:hover {
+  box-shadow: 0 0 15px rgba(224, 200, 120, 0.4);
+}
+
 
 
 /* VIP */
