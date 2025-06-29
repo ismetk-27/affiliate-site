@@ -55,6 +55,12 @@ h2 {
 }
 
 /* === ANA SPONSOR ALANI - Responsive Grid === */
+.sponsor-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Her zaman 4 kolon */
+  gap: 20px;
+  justify-content: center;
+}
 .sponsor-card {
   position: relative;
   overflow: hidden;
@@ -329,4 +335,3 @@ footer {
   .mobile-banner-slider .close-btn:hover {
     color: white;
   }
-}
