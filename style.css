@@ -249,6 +249,11 @@ footer {
   text-align: center;
   transition: filter 0.3s ease;
   position: relative;
+  height: 500px; /* ← YÜKSEKLİK AYARLANDI */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner-inner:hover {
@@ -277,9 +282,11 @@ footer {
 }
 
 .banner-inner img {
-  width: 100%;
+  width: auto;
+  max-width: 80px;
+  max-height: 80px;
   border-radius: 8px;
-  transition: opacity 0.3s ease;
+  margin-bottom: 10px;
 }
 
 .banner-text {
