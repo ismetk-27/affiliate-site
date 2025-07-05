@@ -37,23 +37,30 @@ a:active {
 
 /* HEADER */
 header {
-  background-image: url('assets/img/header-bg.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
-  background-size: 400px;
-
-  backdrop-filter: blur(20px); /* 👈 Hafif bulanıklaştırma */
-  -webkit-backdrop-filter: blur(20px); /* Safari için */
-
-  border-radius: 16px;
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
-  padding: 1px 12px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  margin-top: 8px; /* İstersen 10px veya daha fazla yapabilirsin */
+  background: linear-gradient(145deg, #f0d878, #d9b85c);
+  color: #0A0F2C;
+  border-radius: 12px;
+  box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.4),
+              inset -2px -2px 5px rgba(0, 0, 0, 0.2),
+              0 2px 6px rgba(224, 200, 120, 0.4);
   box-sizing: border-box;
-  overflow: hidden;
+}
+
+@media (min-width: 769px) {
+  nav.social {
+    display: grid;
+    grid-template-columns: repeat(2, auto); /* 2'li kolon */
+    gap: 5px 10px; /* satır ve sütun aralığı */
+    justify-content: center; /* ortala */
+    align-items: center;
+  }
 }
 
 .logo img {
@@ -69,7 +76,7 @@ nav.social a {
 
 nav.social img {
   width: 120px;
-  height: 120px;
+  height: 40px;
   object-fit: contain;
   transition: transform 0.2s ease;
 }
