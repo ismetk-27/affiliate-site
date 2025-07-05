@@ -21,16 +21,14 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
-  border-bottom: 2px solid #e0c878;
+  border-bottom: 1px solid #e0c878;
   margin-bottom: 0;
-  box-shadow: 0 2px 6px rgba(224, 200, 120, 0.2);
-  
-  background-color: rgba(10, 15, 44, 0.85);
 }
 
 .logo img {
-  height: 200px;
+  height: 140px; /* veya ne kadar büyük olmasını istiyorsan */
   width: auto;
+  max-height: 250px; /* Üst sınır koymak istersen */
 }
 
 nav.social a {
