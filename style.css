@@ -35,8 +35,8 @@ nav.social a {
 }
 
 nav.social img {
-  width: 28px;
-  height: 28px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
   transition: transform 0.2s ease;
 }
