@@ -24,18 +24,25 @@ header {
   border-bottom: 1px solid #e0c878;
 }
 
-.logo {
-  font-size: 24px;
-  font-weight: 600;
-  color: #e0c878;
+.logo img {
+  height: 50px;
+  width: auto;
 }
 
 nav.social a {
-  color: #e0c878;
-  margin-left: 15px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+nav.social img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+nav.social img:hover {
+  transform: scale(1.15);
 }
 
 nav.social a:hover {
