@@ -360,13 +360,23 @@ footer {
   }
 }
 @media (max-width: 768px) {
-  nav.social img {
-    width: 40px;
-    height: 40px;
+  nav.social {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 sütun */
+    gap: 12px;
+    justify-items: center; /* Hücre içeriğini ortala */
+    align-items: center;
+    padding: 10px 0;
   }
 
-  nav.social a {
-    margin-left: 6px;
+  nav.social a img {
+    width: 40px;
+    height: auto;
+  }
+    nav.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (max-width: 768px) {
