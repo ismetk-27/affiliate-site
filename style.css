@@ -20,12 +20,16 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
-  border-bottom: 1px solid #e0c878;
+  padding: 10px 0;
+  border-bottom: 2px solid #e0c878;
+  margin-bottom: 0;
+  box-shadow: 0 2px 6px rgba(224, 200, 120, 0.2);
+  
+  background-color: rgba(10, 15, 44, 0.85);
 }
 
 .logo img {
-  height: 50px;
+  height: 200px;
   width: auto;
 }
 
@@ -35,8 +39,8 @@ nav.social a {
 }
 
 nav.social img {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   object-fit: contain;
   transition: transform 0.2s ease;
 }
