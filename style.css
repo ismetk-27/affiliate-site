@@ -28,7 +28,7 @@ header {
 .logo img {
   height: 140px; /* veya ne kadar büyük olmasını istiyorsan */
   width: auto;
-  max-height: 250px; /* Üst sınır koymak istersen */
+  max-height: 80px; /* Üst sınır koymak istersen */
 }
 
 nav.social a {
@@ -353,6 +353,28 @@ footer {
 .mobile-banner-slider {
   display: none;
 }
+@media (max-width: 768px) {
+  .logo img {
+    height: 60px;
+    width: auto;
+  }
+}
+@media (max-width: 768px) {
+  nav.social img {
+    width: 24px;
+    height: 24px;
+  }
+
+  nav.social a {
+    margin-left: 6px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    padding: 10px 0;
+  }
+}
+
 
 @media (max-width: 768px) {
   .fixed-banner {
