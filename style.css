@@ -20,13 +20,19 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  padding: 1px 12px;
   border-bottom: 1px solid #e0c878;
   margin-bottom: 0;
+
+  background-color: rgba(255, 255, 255, 0.1); /* Açık gri ve %10 opaklık */
+  backdrop-filter: blur(6px); /* Arkadakini hafif bulanıklaştır */
+  -webkit-backdrop-filter: blur(6px); /* Safari için */
+  border-radius: 16px; /* Kenarları yumuşat */
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1); /* Hafif bir parıltı */
 }
 
 .logo img {
-  height: 140px; /* veya ne kadar büyük olmasını istiyorsan */
+  height: auto; /* veya ne kadar büyük olmasını istiyorsan */
   width: auto;
   max-height: 80px; /* Üst sınır koymak istersen */
 }
@@ -75,8 +81,9 @@ h2 {
 .sponsor-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* Her zaman 4 kolon */
-  gap: 20px;
   justify-content: center;
+  gap: 20px;
+
 }
 .sponsor-card {
   position: relative;
@@ -136,6 +143,7 @@ h2 {
 }
 
 /* Hover efekti aktif */
+@media (min-width: 769px) {
 .sponsor-card:hover .sponsor-img {
   filter: blur(2px);
 }
@@ -146,6 +154,26 @@ h2 {
 .sponsor-card:hover .hover-overlay {
   opacity: 1;
 }
+}
+
+
+.sponsor-mobile-text {
+  display: none;
+  font-size: 14px;
+  color: #e0c878;
+  text-align: center;
+  margin: 10px auto;
+  font-weight: 600;
+  line-height: 1.4;
+  max-width: 90%; /* Çok uzamasın */
+}
+
+@media (max-width: 768px) {
+  .sponsor-mobile-text {
+    display: block;
+  }
+}
+
 
 
 /* VIP */
@@ -155,7 +183,8 @@ h2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* Her zaman 4 kolon */
   gap: 20px;
-  justify-content: center;
+
+  align-items: stretch; /* ✨ Kartları eşit boyda hizalar */
 }
 
 /* VIP sponsor kutusu */
@@ -251,11 +280,11 @@ footer {
 }
 
 .fixed-banner.left-banner {
-  left: 20px;
+  left: 10px;
 }
 
 .fixed-banner.right-banner {
-  right: 20px;
+  right: 10px;
 }
 
 .banner-inner {
@@ -316,8 +345,8 @@ footer {
 /* GÖRSEL STİLİ */
 .banner-inner img {
   width: auto;
-  max-width: 80px;
-  max-height: 80px;
+  max-width: 200px;
+  max-height: 300px;
   border-radius: 8px;
   margin-bottom: 10px;
 }
@@ -362,21 +391,24 @@ footer {
 @media (max-width: 768px) {
   nav.social {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 sütun */
-    gap: 12px;
-    justify-items: center; /* Hücre içeriğini ortala */
-    align-items: center;
-    padding: 10px 0;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px; /* 👈 hem yatay hem dikey boşluk */
+    justify-items: center;
+    padding: 100;
   }
 
   nav.social a img {
-    width: 40px;
+    width: 100%;
     height: auto;
+    max-width: 120px;
+    margin: 0 !important; /* 👈 img'e özel boşluk varsa iptal */
+    padding: 0 !important;
+    display: block;
   }
     nav.social a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 120px;
+    margin: 0 !important; /* 👈 varsa tüm margin'leri sıfırla */
+    padding: 0 !important;
   }
 }
 @media (max-width: 768px) {
