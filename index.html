@@ -57,6 +57,30 @@
   </a>
 </div>
 
+<!-- MOBİL BANNER SLIDER 1 -->
+<div class="mobile-banner-slider" id="bannerSlider">
+  <button class="close-btn" onclick="document.getElementById('bannerSlider').style.display='none'">×</button>
+
+  <a id="bannerLink" href="https://dng.bet/r/CashSlot777" target="_blank">
+    <div class="slide active">
+      <img src="assets/img/mobil-banner1.png" alt="Banner 1">
+      <div class="slide-text">Anında Kayıpsız %15 İade Fırsatı!</div>
+    </div>
+  </a>
+
+ <!-- MOBİL BANNER SLIDER 2 -->
+  
+  <a id="bannerLink2" href="https://dng.bet/r/CashSlot888" target="_blank" style="display: none;">
+    <div class="slide">
+      <img src="assets/img/mobil-banner2.png" alt="Banner 2">
+      <div class="slide-text">Yatırımsız Bonus Seni Bekliyor</div>
+    </div>
+  </a>
+</div>
+
+
+
+
 
   <!-- Ana Sayfa İçeriği -->
   <div class="container">
@@ -197,12 +221,67 @@
 
   </div>
 
+<!--Pop Up Alanı-->
+<div class="popup-overlay" id="popup">
+  <div class="popup-content">
+    <button class="popup-close" onclick="closePopup()">×</button>
+    <img src="assets/img/popup-kampanya.png" alt="Kampanya" />
+    <p>Reklam ve İş Birliği İçin</p>
+    <a href="mailto:iletisim@cashslot777.com" class="popup-btn" > iletisim@cashslot777.com</a>
+  </div>
+</div>
+
+
 
 </script>
 
 <footer class="site-footer">
-  <p>📢 Reklam & İş Birliği için: <a href="mailto:iletisim@cashslot.com">iletisim@cashslot.com</a></p>
+  <p>📢 Reklam & İş Birliği için: <a href="mailto:iletisim@cashslot777.com">iletisim@cashslot777.com</a></p>
 </footer>
+
+<script>
+  let current = 0;
+  const banners = [
+    {
+      link: "https://dng.bet/r/CashSlot777",
+      img: "assets/img/mobil-banner1.png",
+      text: "Her Gün Sonu Freespin!"
+    },
+    {
+      link: "https://dng.bet/r/CashSlot888",
+      img: "assets/img/mobil-banner2.png",
+      text: "Çekim Sonrası %15 Nakit Kayıp İade"
+    }
+    // İstediğin kadar ekleyebilirsin
+  ];
+
+  const bannerLink = document.querySelector("#bannerLink");
+  const bannerImg = bannerLink.querySelector("img");
+  const bannerText = bannerLink.querySelector(".slide-text");
+
+  setInterval(() => {
+    current = (current + 1) % banners.length;
+    bannerLink.href = banners[current].link;
+    bannerImg.src = banners[current].img;
+    bannerImg.alt = "Banner " + (current + 1
+    );
+    bannerText.textContent = banners[current].text;
+  }, 2000);
+</script>
+
+<script>
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
+  }
+
+  // Otomatik açılışta göster (opsiyonel: delay vs.)
+  window.onload = function() {
+    document.getElementById("popup").style.display = "flex";
+  }
+</script>
+
+
+
 
 
 

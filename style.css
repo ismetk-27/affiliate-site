@@ -489,73 +489,78 @@ footer {
   }
 }
  
-  .mobile-banner-slider {
-    display: block;
-    position: fixed;
-    bottom: 10px;
-    left: 300px;
-    right: 300px;
-    
-    z-index: 999;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(224, 200, 120, 0.3);
-    background-color: rgba(18, 25, 53, 0.95);
-    border: 1px solid #e0c878;
-    padding: 10px;
-  }
-
-  .mobile-banner-slider .slide {
-    display: none;
-  }
-
-  .mobile-banner-slider .slide.active {
-    display: block;
-    animation: fadein 0.5s ease;
-  }
-
-  .mobile-banner-slider img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-
-@keyframes glowPulse {
-  0% {
-    box-shadow: 0 0 5px rgba(224, 200, 120, 0.3);
-  }
-  50% {
-    box-shadow: 0 0 15px rgba(224, 200, 120, 0.6);
-  }
-  100% {
-    box-shadow: 0 0 5px rgba(224, 200, 120, 0.3);
-  }
+.mobile-banner-slider {
+  position: fixed;
+  bottom: 10px;
+  left: 20px;
+  right: 20px;
+  z-index: 999;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(224, 200, 120, 0.3);
+  background-color: rgba(18, 25, 53, 0.95);
+  border: 1px solid #e0c878;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-  .mobile-banner-slider .close-btn {
-    position: absolute;
-    top: 4px;
-    right: 8px;
-    background: none;
-    border: none;
-    color: #e0c878;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    z-index: 1000;
-  }
-
-  .mobile-banner-slider .close-btn:hover {
-    color: white;
-  }
-.slide-text {
-  text-align: center;
-  margin-top: 8px;
-  font-size: 14px;
+.mobile-banner-slider .slide {
+  display: flex;
+  align-items: center;         /* Dikey hizalama */
+  justify-content: center;     /* Yatay ortalama */
+  gap: 12px;                   /* Logo ile yazı arası boşluk */
   color: #e0c878;
+  font-size: 14px;
   font-weight: 600;
+  text-align: center;
+  cursor: pointer;
 }
 
+.mobile-banner-slider img {
+  width: 100px;         /* Küçük sabit logo boyutu */
+  height: 80px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.slide-text {
+  color: #e0c878;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.mobile-banner-slider .close-btn {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  background: none;
+  border: none;
+  color: #e0c878;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.mobile-banner-slider .close-btn:hover {
+  color: white;
+}
+
+@media (min-width: 769px) {
+  .mobile-banner-slider {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 100px; /* Banner boyutuna göre ayarla */
+  }
+}
 
 .site-footer {
   background-color: rgba(224, 200, 120, 0.1); /* Hafif altın tonunda, opak */
@@ -576,4 +581,70 @@ footer {
 
 .site-footer a:hover {
   color: #ffffff;
+}
+
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 15, 44, 0.4); /* Yarı saydam koyu bir arka plan */
+  backdrop-filter: blur(6px);             /* Arkayı bulanıklaştırır */
+  -webkit-backdrop-filter: blur(6px);     /* Safari desteği */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #121935;
+  border: 3px solid #e0c878;
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+  max-width: 320px;
+  width: 90%;
+  box-shadow: 0 0 15px rgba(224, 200, 120, 0.4);
+}
+
+.popup-content img {
+  max-width: 50%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.popup-content p {
+  color: #e0c878;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+
+.popup-btn {
+  background: none;         /* Arka planı kaldır */
+  color: #e0c878;           /* Yazı rengi (altın tonu) */
+  padding: 0;               /* İç boşluk sıfır */
+  border-radius: 0;         /* Köşe yumuşatma iptal */
+  text-decoration: none;    /* Alt çizgi istemiyorsan */
+  font-weight: normal;      /* Kalınlık normal */
+  font-size: 16px;          /* Yazı boyutu */
+}
+.popup-btn:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.popup-close {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #e0c878;
+  cursor: pointer;
 }
