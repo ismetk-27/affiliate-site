@@ -4,28 +4,11 @@
     <meta charset="utf-8" />
     <title>Site Admin</title>
     <meta name="robots" content="noindex" />
-
-    <!-- 🔧 Decap (Netlify CMS) CDN -->
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-
-    <!-- 🔐 Netlify Identity widget (git-gateway için) -->
+    <!-- Netlify Identity (git-gateway için) -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <!-- Decap CMS (Netlify CMS) -->
+    <script src="https://unpkg.com/decap-cms@^3.8.1/dist/decap-cms.js"></script>
+    <!-- ⚠️ Burada KESİNLİKLE CMS.init() çağırma; Decap otomatik başlatır -->
   </head>
-  <body>
-    <script>
-      // Decap CMS’te global isim CMS
-      CMS.init();
-
-      // Panel dışında login olursan geri dönsün
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", (user) => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              window.location.reload();
-            });
-          }
-        });
-      }
-    </script>
-  </body>
+  <body></body>
 </html>
