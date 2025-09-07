@@ -1,7 +1,6 @@
 backend:
-  name: github
-  repo: ismetk-27/affiliate-site
-  branch: main   # repo'n hangisiyse: main ya da master
+  name: git-gateway
+  branch: main 
 
 
 media_folder: "assets/uploads"
