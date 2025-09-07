@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <title>Site Admin</title>
     <meta name="robots" content="noindex" />
-    <base href="/" />
   </head>
   <body>
     <div id="nc-root"></div>
@@ -13,10 +12,14 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script>
       if (window.netlifyIdentity) {
+        // Identity endpoint'i kökten ve tam adresle veriyoruz
         window.netlifyIdentity.init({
           APIUrl: "https://cashslot10.netlify.app/.netlify/identity"
         });
       }
+
+      // 🔧 Decap CMS'e config.yml yolunu açıkça söyle
+      window.CMS_CONFIG_PATH = "/admin/config.yml";
     </script>
 
     <!-- Decap CMS -->
