@@ -1,0 +1,117 @@
+backend:
+  name: github
+  repo: ismetk-27/affiliate-site
+  branch: main   # repo'n hangisiyse: main ya da master
+
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+publish_mode: simple
+
+collections:
+  - name: "site"
+    label: "Site Ayarları"
+    format: "json"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - file: "content/site.json"
+        label: "Genel İçerik"
+        name: "sitecontent"
+        fields:
+          - label: "Site Başlığı"
+            name: "page_title"
+            widget: "string"
+            default: "CashSlot \"Kaybedenlerin Kahramanı\""
+
+          - label: "Arkaplan Görseli"
+            name: "background"
+            widget: "object"
+            fields:
+              - { label: "Görsel", name: "image", widget: "image", default: "assets/img/background.png" }
+              - { label: "Boyut (CSS background-size)", name: "size", widget: "string", default: "175px" }
+              - { label: "Tekrar (repeat/no-repeat)", name: "repeat", widget: "string", default: "repeat" }
+              - { label: "Sabit (fixed/scroll)", name: "attachment", widget: "string", default: "fixed" }
+
+          - label: "Logo"
+            name: "logo"
+            widget: "object"
+            fields:
+              - { label: "Görsel", name: "src", widget: "image", default: "assets/img/analogo.png" }
+              - { label: "Alt Metin", name: "alt", widget: "string", default: "Logo" }
+
+          - label: "Sosyal Linkler"
+            name: "socials"
+            widget: "object"
+            fields:
+              - { label: "Telegram Sohbet URL", name: "telegram_chat_url", widget: "string", default: "http://t.me/cashslotsohbet" }
+              - { label: "Telegram Sohbet İkonu", name: "telegram_chat_icon", widget: "image", default: "assets/icons/telegram1.png" }
+
+              - { label: "Telegram Duyuru URL", name: "telegram_announce_url", widget: "string", default: "http://t.me/CashSlotDuyuru" }
+              - { label: "Telegram Duyuru İkonu", name: "telegram_announce_icon", widget: "image", default: "assets/icons/telegram2.png" }
+
+              - { label: "YouTube 1 URL", name: "youtube1_url", widget: "string", default: "https://www.youtube.com/@Cashslot777" }
+              - { label: "YouTube 1 İkonu", name: "youtube1_icon", widget: "image", default: "assets/icons/youtube1.png" }
+
+              - { label: "YouTube 2 URL", name: "youtube2_url", widget: "string", default: "https://www.youtube.com/@cashslot7" }
+              - { label: "YouTube 2 İkonu", name: "youtube2_icon", widget: "image", default: "assets/icons/youtube2.png" }
+
+          - label: "Sol Sabit Banner"
+            name: "left_fixed_banner"
+            widget: "object"
+            fields:
+              - { label: "Aktif", name: "enabled", widget: "boolean", default: true }
+              - { label: "Yazı", name: "text", widget: "string", default: "Her Gün Sonu Freespin" }
+              - { label: "Görsel", name: "image", widget: "image", default: "assets/img/solbanner.png" }
+              - { label: "Link", name: "href", widget: "string", default: "https://dng.bet/r/CashSlot777" }
+
+          - label: "Sağ Sabit Banner"
+            name: "right_fixed_banner"
+            widget: "object"
+            fields:
+              - { label: "Aktif", name: "enabled", widget: "boolean", default: true }
+              - { label: "Yazı", name: "text", widget: "string", default: "Çekim Sonrası %15 Nakit Kayıp İade" }
+              - { label: "Görsel", name: "image", widget: "image", default: "assets/img/sagbanner.png" }
+              - { label: "Link", name: "href", widget: "string", default: "https://dng.bet/r/CashSlot777" }
+
+          - label: "Mobil Slider Bannerları"
+            name: "mobile_banners"
+            widget: "list"
+            summary: "{{fields.text}}"
+            fields:
+              - { label: "Link", name: "link", widget: "string" }
+              - { label: "Görsel", name: "img", widget: "image" }
+              - { label: "Metin", name: "text", widget: "string" }
+
+          - label: "Sponsor Kartları"
+            name: "sponsors"
+            widget: "list"
+            fields:
+              - { label: "Link", name: "href", widget: "string" }
+              - { label: "Arkaplan Görseli", name: "image", widget: "image" }
+              - { label: "Hover Metni", name: "hover", widget: "string" }
+              - { label: "Logo Görseli", name: "logo", widget: "image" }
+
+          - label: "VIP Kartları"
+            name: "vip_cards"
+            widget: "list"
+            fields:
+              - { label: "Link", name: "href", widget: "string" }
+              - { label: "Görsel", name: "img", widget: "image" }
+              - { label: "Metin", name: "text", widget: "string" }
+
+          - label: "Popup"
+            name: "popup"
+            widget: "object"
+            fields:
+              - { label: "Aktif", name: "enabled", widget: "boolean", default: true }
+              - { label: "Görsel", name: "image", widget: "image", default: "assets/img/popup-kampanya.png" }
+              - { label: "Metin", name: "text", widget: "string", default: "Reklam ve İş Birliği İçin" }
+              - { label: "E-posta", name: "email", widget: "string", default: "iletisim@cashslot777.com" }
+
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "E-posta", name: "email", widget: "string", default: "iletisim@cashslot777.com" }
