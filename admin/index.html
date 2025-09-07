@@ -4,37 +4,25 @@
     <meta charset="utf-8" />
     <title>Site Admin</title>
     <meta name="robots" content="noindex" />
+    <!-- 🔧 Tüm relative yollar kökten başlasın diye -->
+    <base href="/" />
   </head>
   <body>
-    <!-- Decap CMS burada render edecek -->
+    <!-- CMS buraya render edilecek -->
     <div id="nc-root"></div>
 
-    <!-- Kimlik: git-gateway için gerekli -->
+    <!-- Netlify Identity Widget -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <!-- Decap (Netlify CMS) -->
+    <script>
+      // Netlify Identity API yolunu açıkça tanımlıyoruz
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.init({
+          APIUrl: "https://cashslot10.netlify.app/.netlify/identity"
+        });
+      }
+    </script>
+
+    <!-- Decap CMS (Netlify CMS devamı) -->
     <script src="https://unpkg.com/decap-cms@^3.8.1/dist/decap-cms.js"></script>
-    <!-- NOT: CMS.init() çağırma; Decap otomatik başlatır -->
-	
-	<!-- Netlify Identity widget -->
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<script>
-  (function () {
-    var params = new URLSearchParams(window.location.search);
-
-    // 1) Şifre kurtarma linkiyle geldiyse /admin'e gönder
-    if (params.has('recovery_token')) {
-      window.location.replace('/admin/');
-      return;
-    }
-
-    // 2) Herhangi bir yerde login olursa /admin'e yönlendir
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on('login', function () {
-        window.location.href = '/admin/';
-      });
-    }
-  })();
-</script>
-
   </body>
 </html>
