@@ -1,24 +1,69 @@
 {
+  "vip_cards": [
+    {
+      "href": "https://dng.bet/r/CashSlot777",
+      "img": "assets/img/vip1.png",
+      "text": "Yatırıma Özel %20 Çevrimsiz Yatırım Bonusu "
+    },
+    {
+      "href": "https://dng.bet/r/CashSlot777",
+      "img": "assets/img/vip2.png",
+      "text": " Haftalık %10 Kayıp Bonusu DengeBet'te"
+    },
+    {
+      "href": "https://dng.bet/r/CashSlot777",
+      "img": "assets/img/vip3.png",
+      "text": "Arkadaşını Getir Nakiti Götür! (2000₺)"
+    },
+    {
+      "href": "https://dng.bet/r/CashSlot777",
+      "img": "assets/img/vip4.png",
+      "text": "4 Yatırım Yap 5. Yatırım DengeBet'ten"
+    },
+    {
+      "href": "https://dng.bet/r/CashSlot777",
+      "img": "assets/img/vip5.png",
+      "text": "4 Yatırım Yap 5. Yatırım DengeBet'ten"
+    }
+  ],
+  "socials": {
+    "telegram_chat_url": "http://t.me/cashslotsohbet",
+    "telegram_chat_icon": "assets/icons/telegram1.png",
+    "telegram_announce_url": "http://t.me/CashSlotDuyuru",
+    "telegram_announce_icon": "assets/icons/telegram2.png",
+    "youtube1_url": "https://www.youtube.com/@Cashslot777",
+    "youtube1_icon": "assets/icons/youtube1.png",
+    "youtube2_url": "https://www.youtube.com/@cashslot7",
+    "youtube2_icon": "assets/icons/youtube2.png"
+  },
   "page_title": "CashSlot \"Kaybedenlerin Kahramanı\"",
+  "mobile_banners": [
+    {
+      "link": "https://dng.bet/r/CashSlot777",
+      "img": "assets/img/mobil-banner1.png",
+      "text": "Her Gün Sonu Freespin!"
+    },
+    {
+      "link": "https://dng.bet/r/CashSlot888",
+      "img": "assets/img/mobil-banner2.png",
+      "text": "Çekim Sonrası %15 Nakit Kayıp İade"
+    }
+  ],
+  "logo": {
+    "src": "assets/img/analogo.png",
+    "alt": "Logo"
+  },
+  "popup": {
+    "enabled": true,
+    "image": "assets/img/popup-kampanya.png",
+    "text": "Reklam ve İş Birliği İçin",
+    "email": "iletisim@cashslot777.com"
+  },
   "background": {
     "image": "assets/img/background.png",
     "size": "175px",
     "repeat": "repeat",
     "attachment": "fixed"
-  },
-  "logo": { "src": "assets/img/analogo.png", "alt": "Logo" },
-  "socials": {
-    "telegram_chat_url": "http://t.me/cashslotsohbet",
-    "telegram_chat_icon": "assets/icons/telegram1.png",
-
-    "telegram_announce_url": "http://t.me/CashSlotDuyuru",
-    "telegram_announce_icon": "assets/icons/telegram2.png",
-
-    "youtube1_url": "https://www.youtube.com/@Cashslot777",
-    "youtube1_icon": "assets/icons/youtube1.png",
-
-    "youtube2_url": "https://www.youtube.com/@cashslot7",
-    "youtube2_icon": "assets/icons/youtube2.png"
   },
   "left_fixed_banner": {
     "enabled": true,
@@ -26,31 +71,27 @@
     "image": "assets/img/solbanner.png",
     "href": "https://dng.bet/r/CashSlot777"
   },
+  "sponsors": [
+    {
+      "href": "https://dng.bet/r/CashSlot777",
+      "image": "assets/img/sponsor1.png",
+      "hover": "%100 Canlı Casino ve Slot Hoş Geldin Bonusu",
+      "logo": "assets/logos/logo1.png"
+    },
+    {
+      "href": "https://dng.bet/r/CashSlot777",
+      "image": "/assets/uploads/dall·e-2025-07-05-14.08.59-a-minimalist-rectangular-logo-design-for-a-website-named-cashslot-.-the-logo-should-feature-a-luxurious-gold-and-navy-blue-dark-blue-color-scheme.-.webp",
+      "hover": "deneme metin",
+      "logo": "/assets/uploads/dall·e-2025-07-05-14.10.06-a-minimalist-logo-design-for-a-website-named-cashslot-with-a-transparent-or-plain-background-no-textures-no-environments-.-the-design-should-featu.webp"
+    }
+  ],
   "right_fixed_banner": {
     "enabled": true,
     "text": "Çekim Sonrası %15 Nakit Kayıp İade",
     "image": "assets/img/sagbanner.png",
     "href": "https://dng.bet/r/CashSlot777"
   },
-  "mobile_banners": [
-    { "link": "https://dng.bet/r/CashSlot777", "img": "assets/img/mobil-banner1.png", "text": "Her Gün Sonu Freespin!" },
-    { "link": "https://dng.bet/r/CashSlot888", "img": "assets/img/mobil-banner2.png", "text": "Çekim Sonrası %15 Nakit Kayıp İade" }
-  ],
-  "sponsors": [
-    { "href": "https://dng.bet/r/CashSlot777", "image": "assets/img/sponsor1.png", "hover": "%100 Canlı Casino ve Slot Hoş Geldin Bonusu", "logo": "assets/logos/logo1.png" }
-  ],
-  "vip_cards": [
-    { "href": "https://dng.bet/r/CashSlot777", "img": "assets/img/vip1.png", "text": "Yatırıma Özel %20 Çevrimsiz Yatırım Bonusu " },
-    { "href": "https://dng.bet/r/CashSlot777", "img": "assets/img/vip2.png", "text": " Haftalık %10 Kayıp Bonusu DengeBet'te" },
-    { "href": "https://dng.bet/r/CashSlot777", "img": "assets/img/vip3.png", "text": "Arkadaşını Getir Nakiti Götür! (2000₺)" },
-    { "href": "https://dng.bet/r/CashSlot777", "img": "assets/img/vip4.png", "text": "4 Yatırım Yap 5. Yatırım DengeBet'ten" },
-    { "href": "https://dng.bet/r/CashSlot777", "img": "assets/img/vip5.png", "text": "4 Yatırım Yap 5. Yatırım DengeBet'ten" }
-  ],
-  "popup": {
-    "enabled": true,
-    "image": "assets/img/popup-kampanya.png",
-    "text": "Reklam ve İş Birliği İçin",
+  "footer": {
     "email": "iletisim@cashslot777.com"
-  },
-  "footer": { "email": "iletisim@cashslot777.com" }
+  }
 }
