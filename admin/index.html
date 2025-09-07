@@ -4,17 +4,14 @@
     <meta charset="utf-8" />
     <title>Site Admin</title>
     <meta name="robots" content="noindex" />
-    <!-- 🔧 Tüm relative yollar kökten başlasın diye -->
     <base href="/" />
   </head>
   <body>
-    <!-- CMS buraya render edilecek -->
     <div id="nc-root"></div>
 
-    <!-- Netlify Identity Widget -->
+    <!-- Netlify Identity -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script>
-      // Netlify Identity API yolunu açıkça tanımlıyoruz
       if (window.netlifyIdentity) {
         window.netlifyIdentity.init({
           APIUrl: "https://cashslot10.netlify.app/.netlify/identity"
@@ -22,7 +19,7 @@
       }
     </script>
 
-    <!-- Decap CMS (Netlify CMS devamı) -->
+    <!-- Decap CMS -->
     <script src="https://unpkg.com/decap-cms@^3.8.1/dist/decap-cms.js"></script>
   </body>
 </html>
