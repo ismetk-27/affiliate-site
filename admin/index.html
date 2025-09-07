@@ -12,15 +12,10 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script>
       (function () {
-        var origin = window.location.origin; // hangi domaindeysen onunla çalış
+        var origin = window.location.origin; // hangi domaindeysen onu kullan
         if (window.netlifyIdentity) {
-          window.netlifyIdentity.init({
-            APIUrl: origin + "/.netlify/identity"
-          });
-          // dışarıda login olursa geri yükle
-          window.netlifyIdentity.on("login", function () {
-            window.location.reload();
-          });
+          window.netlifyIdentity.init({ APIUrl: origin + "/.netlify/identity" });
+          window.netlifyIdentity.on("login", function () { window.location.reload(); });
         }
       })();
 
