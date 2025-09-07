@@ -4,11 +4,15 @@
     <meta charset="utf-8" />
     <title>Site Admin</title>
     <meta name="robots" content="noindex" />
-    <!-- Netlify Identity (git-gateway için) -->
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <!-- Decap CMS (Netlify CMS) -->
-    <script src="https://unpkg.com/decap-cms@^3.8.1/dist/decap-cms.js"></script>
-    <!-- ⚠️ Burada KESİNLİKLE CMS.init() çağırma; Decap otomatik başlatır -->
   </head>
-  <body></body>
+  <body>
+    <!-- Decap CMS burada render edecek -->
+    <div id="nc-root"></div>
+
+    <!-- Kimlik: git-gateway için gerekli -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <!-- Decap (Netlify CMS) -->
+    <script src="https://unpkg.com/decap-cms@^3.8.1/dist/decap-cms.js"></script>
+    <!-- NOT: CMS.init() çağırma; Decap otomatik başlatır -->
+  </body>
 </html>
