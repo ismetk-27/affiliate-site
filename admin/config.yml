@@ -1,11 +1,12 @@
 backend:
   name: git-gateway
-  branch: main 
+  branch: main   # senin GitHub reposunun ana branch'i
 
+media_folder: "assets/img/uploads"   # dosyaların kaydedileceği klasör
+public_folder: "/assets/img/uploads" # sitede erişileceği yol
 
-media_folder: "assets/uploads"
-public_folder: "/assets/uploads"
-publish_mode: simple
+site_url: "https://cashslot10.netlify.app"
+display_url: "https://cashslot10.netlify.app"
 
 collections:
   - name: "site"
