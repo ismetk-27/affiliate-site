@@ -11,23 +11,20 @@
     <!-- Netlify Identity -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script>
-      // Admin'i hangi domain'den açtıysan o origin'i kullan:
       (function () {
-        var origin = window.location.origin; // örn: https://cashslot10.netlify.app veya senin custom domainin
+        var origin = window.location.origin; // hangi domaindeysen onunla çalış
         if (window.netlifyIdentity) {
           window.netlifyIdentity.init({
             APIUrl: origin + "/.netlify/identity"
           });
-        }
-        // Panel dışında login olursan geri dönsün
-        if (window.netlifyIdentity) {
+          // dışarıda login olursa geri yükle
           window.netlifyIdentity.on("login", function () {
             window.location.reload();
           });
         }
       })();
 
-      // Decap'e config yolunu açıkça söyle (relative karışmasın)
+      // Decap'e config yolunu açıkça söyle
       window.CMS_CONFIG_PATH = "/admin/config.yml";
     </script>
 
