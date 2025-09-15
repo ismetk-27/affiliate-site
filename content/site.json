@@ -1,29 +1,9 @@
 {
   "vip_cards": [
     {
-      "href": "https://denge.link/Cashslot777",
-      "img": "assets/img/vip1.png",
-      "text": "250 FREEBET VE FREESPİN DENEME BONUSU!"
-    },
-    {
-      "href": "https://denge.link/Cashslot777",
-      "img": "assets/img/vip2.png",
-      "text": " Haftalık %10 Kayıp Bonusu DengeBet'te"
-    },
-    {
-      "href": "https://denge.link/Cashslot777",
-      "img": "assets/img/vip3.png",
-      "text": "Arkadaşını Getir Nakiti Götür! (2000₺)"
-    },
-    {
-      "href": "https://denge.link/Cashslot777",
-      "img": "assets/img/vip4.png",
-      "text": "4 Yatırım Yap 5. Yatırım DengeBet'ten"
-    },
-    {
-      "href": "https://denge.link/Cashslot777",
-      "img": "assets/img/vip5.png",
-      "text": "4 Yatırım Yap 5. Yatırım DengeBet'ten"
+      "href": "https://stilbetgir.com/?refId=183",
+      "img": "/assets/img/uploads/photo_2025-09-15_12-31-11.jpg",
+      "text": "KAZANANLAR LİGİNE HOŞGELDİN!"
     }
   ],
   "socials": {
@@ -50,17 +30,17 @@
     }
   ],
   "logo": {
-    "src": "/assets/img/uploads/analogo.png",
+    "src": "https://denge.link/Cashslot777",
     "alt": "Logo"
   },
   "popup": {
     "enabled": true,
     "image": "assets/img/popup-kampanya.png",
     "text": "Reklam ve İş Birliği İçin",
-    "email": "iletisim@cashslot777.com"
+    "email": "https://t.me/CashSlotDuyuru"
   },
   "background": {
-    "image": "/assets/img/uploads/background.png",
+    "image": "https://stake1070.com/tr?offer=CashSlot777&c=CashSlot777",
     "size": "175px",
     "repeat": "repeat",
     "attachment": "fixed"
@@ -80,7 +60,7 @@
     },
     {
       "image": "/assets/img/uploads/photo_2025-09-15_00-11-09.jpg",
-      "logo": "/assets/img/uploads/başlıksız-2.png",
+      "logo": "/assets/img/uploads/stake.png",
       "href": "https://stake1070.com/tr?offer=CashSlot777&c=CashSlot777",
       "hover": "DÜNYANIN EN BÜYÜK PLATFORMU SİZLERLE"
     }
@@ -88,10 +68,10 @@
   "right_fixed_banner": {
     "enabled": true,
     "text": "Çekim Sonrası %15 Nakit Kayıp İade",
-    "image": "/assets/img/uploads/sagbanner.png",
+    "image": "https://denge.link/Cashslot777",
     "href": "https://denge.link/Cashslot777"
   },
   "footer": {
-    "email": "iletisim@cashslot777.com"
+    "email": "https://t.me/CashSlotDuyuru"
   }
 }
