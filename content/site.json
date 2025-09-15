@@ -63,12 +63,18 @@
       "logo": "/assets/img/uploads/stake.png",
       "href": "https://stake1070.com/tr?offer=CashSlot777&c=CashSlot777",
       "hover": "DÜNYANIN EN BÜYÜK PLATFORMU SİZLERLE"
+    },
+    {
+      "href": "https://virabet.click/?refId=288",
+      "image": "/assets/img/uploads/photo_2025-09-15_13-13-47.jpg",
+      "hover": "EN YENİ CASİNO VE SLOT OYUNLARI",
+      "logo": "/assets/img/uploads/logo.png"
     }
   ],
   "right_fixed_banner": {
     "enabled": true,
     "text": "Çekim Sonrası %15 Nakit Kayıp İade",
-    "image": "https://denge.link/Cashslot777",
+    "image": "/assets/img/uploads/solbanner.png",
     "href": "https://denge.link/Cashslot777"
   },
   "footer": {
