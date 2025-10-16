@@ -225,14 +225,18 @@
 
 <div class="popup-overlay" id="popup">
   <div class="popup-content">
-  
     <button class="popup-close" onclick="closePopup()">×</button>
-    <img src="assets/img/popup-kampanya.png" alt="Kampanya" />
-	<a href="{{ popup.link }}" target="_blank" rel="noopener noreferrer">
-    <p>Reklam ve İş Birliği İçin</p>
-    <a href="mailto:iletisim@cashslot777.com" class="popup-btn" > iletisim@cashslot777.com</a>
+
+    <!-- Görselin kendisi tıklanabilir hale geldi -->
+    <a href="{{ popup.link }}" target="_blank" rel="noopener noreferrer">
+      <img src="assets/img/popup-kampanya.png" alt="Kampanya" />
+    </a>
+
+    <p>{{ popup.text }}</p>
+    <a href="mailto:{{ popup.email }}" class="popup-btn">{{ popup.email }}</a>
   </div>
 </div>
+
 
 
 
