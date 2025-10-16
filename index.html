@@ -225,12 +225,28 @@
 <div class="popup-overlay" id="popup">
   <div class="popup-content">
     <button class="popup-close" onclick="closePopup()">×</button>
-    <img src="assets/img/popup-kampanya.png" alt="Kampanya" />
+
+    <!-- Görsel tıklanınca yeni sekmede açılır -->
+    <a href="https://cashslot777.com" target="_blank" rel="noopener noreferrer">
+      <img src="assets/img/popup-kampanya.png" alt="Kampanya" />
+    </a>
+
     <p>Reklam ve İş Birliği İçin</p>
-    <a href="mailto:iletisim@cashslot777.com" class="popup-btn" > iletisim@cashslot777.com</a>
+    <a href="mailto:iletisim@cashslot777.com" class="popup-btn">iletisim@cashslot777.com</a>
   </div>
 </div>
 
+<script>
+  // Popup'ı kapatma fonksiyonu
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
+  }
+
+  // Popup'ı sayfa yüklendikten sonra gösterme örneği (isteğe bağlı)
+  window.onload = function() {
+    document.getElementById("popup").style.display = "block";
+  };
+</script>
 
 
 </script>
