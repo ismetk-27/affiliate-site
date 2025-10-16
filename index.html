@@ -30,6 +30,90 @@
     sliderInterval = setInterval(showNextSlide, 1000);
   });
 </script>
+
+{% if popup.enabled %}
+<div class="popup-overlay" id="popup">
+  <div class="popup-content">
+    <button class="popup-close" onclick="closePopup()">×</button>
+
+    <a href="{{ popup.link }}" target="_blank" rel="noopener noreferrer">
+      <img src="{{ popup.image }}" alt="Kampanya" />
+    </a>
+
+    <p>{{ popup.text }}</p>
+    <a href="mailto:{{ popup.email }}" class="popup-btn">{{ popup.email }}</a>
+  </div>
+</div>
+
+<script>
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
+  }
+
+  window.addEventListener("load", function() {
+    const popup = document.getElementById("popup");
+    if (popup) popup.style.display = "flex";
+  });
+</script>
+
+<style>
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  .popup-content {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+  }
+
+  .popup-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .popup-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: #f5b301;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+  }
+
+  .popup-btn:hover {
+    background: #d49b00;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+</style>
+{% endif %}
+
+
 </body>
 </html>
 <!-- SOL SABİT BANNER -->
@@ -222,31 +306,8 @@
   </div>
 
 <!--Pop Up Alanı-->
-<div class="popup-overlay" id="popup">
-  <div class="popup-content">
-    <button class="popup-close" onclick="closePopup()">×</button>
 
-    <!-- Görsel tıklanınca yeni sekmede açılır -->
-    <a href="https://cashslot777.com" target="_blank" rel="noopener noreferrer">
-      <img src="assets/img/popup-kampanya.png" alt="Kampanya" />
-    </a>
 
-    <p>Reklam ve İş Birliği İçin</p>
-    <a href="mailto:iletisim@cashslot777.com" class="popup-btn">iletisim@cashslot777.com</a>
-  </div>
-</div>
-
-<script>
-  // Popup'ı kapatma fonksiyonu
-  function closePopup() {
-    document.getElementById("popup").style.display = "none";
-  }
-
-  // Popup'ı sayfa yüklendikten sonra gösterme örneği (isteğe bağlı)
-  window.onload = function() {
-    document.getElementById("popup").style.display = "block";
-  };
-</script>
 
 
 </script>
