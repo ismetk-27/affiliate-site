@@ -110,6 +110,7 @@ collections:
               - { label: "Görsel", name: "image", widget: "image", default: "assets/img/popup-kampanya.png" }
               - { label: "Metin", name: "text", widget: "string", default: "Reklam ve İş Birliği İçin" }
               - { label: "E-posta", name: "email", widget: "string", default: "iletisim@cashslot777.com" }
+              - { label: "Bağlantı (Link)", name: "link", widget: "string", default: "https://dng.bet/r/CashSlot777" }
 
           - label: "Footer"
             name: "footer"
