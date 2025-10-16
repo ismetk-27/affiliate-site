@@ -104,9 +104,9 @@ collections:
 
 # --- 2. POPUP KOLEKSİYONU ---
            - label: "Popup Ayarları"
-            name: "popup" # <-- JS kodu bu isimle erişecek: data.popup
-            widget: "object"
-            fields:
+             name: "popup" # <-- JS kodu bu isimle erişecek: data.popup
+             widget: "object"
+             fields:
               - { label: "Aktif", name: "enabled", widget: "boolean", default: true }
               - { label: "Görsel", name: "image", widget: "image", default: "assets/img/popup-kampanya.png" }
               - { label: "Bağlantı (Link)", name: "link", widget: "string", default: "https://dng.bet/r/CashSlot777" }
@@ -114,17 +114,17 @@ collections:
               - { label: "E-posta", name: "email", widget: "string", default: "iletisim@cashslot777.com" }
 
 # --- 3. FOOTER KOLEKSİYONU ---
-  - name: "footer"
-    label: "Footer Ayarları"
-    format: "json"
-    delete: false
-    editor:
-      preview: false
-    files:
-      - file: "content/footer.json"
-        label: "Footer İçeriği"
-        name: "footercontent"
-        fields:
+           - name: "footer"
+             label: "Footer Ayarları"
+             format: "json"
+             delete: false
+             editor:
+             preview: false
+             files:
+          - file: "content/footer.json"
+            label: "Footer İçeriği"
+            name: "footercontent"
+            fields:
           # Sizin orijinal kodunuzda sadece bu alan vardı.
-          - { label: "E-posta", name: "email", widget: "string", default: "iletisim@cashslot777.com" }
+           - { label: "E-posta", name: "email", widget: "string", default: "iletisim@cashslot777.com" }
           # Buraya Footer'a ait diğer tüm alanları ekleyebilirsiniz (örneğin copyright metni, navigasyon linkleri vb.)
