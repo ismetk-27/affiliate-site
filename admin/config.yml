@@ -103,14 +103,35 @@ collections:
               - { label: "Metin", name: "text", widget: "string" }
 
 # --- 2. POPUP KOLEKSİYONU ---
-          - label: "Popup"
-            name: "popup"
-            widget: "object"
-            fields:
-              - { label: "Aktif", name: "enabled", widget: "boolean", default: true }
-              # ... Diğer Popup alanları buraya
-          - label: "Footer Ayarları"
-            name: "footer"
-            widget: "object"
-            fields:
-              - { label: "E-posta", name: "email", widget: "string", default: "iletisim@cashslot777.com" }
+  - name: "popup"
+    label: "Popup Ayarları"
+    format: "json"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - file: "content/popup.json"
+        label: "Popup İçeriği"
+        name: "popupcontent"
+        fields:
+          - { label: "Aktif", name: "enabled", widget: "boolean", default: true }
+          - { label: "Görsel", name: "image", widget: "image", default: "assets/img/popup-kampanya.png" }
+          - { label: "Bağlantı (Link)", name: "link", widget: "string", default: "https://dng.bet/r/CashSlot777" }
+          - { label: "Metin", name: "text", widget: "string", default: "Reklam ve İş Birliği İçin" }
+          - { label: "E-posta", name: "email", widget: "string", default: "iletisim@cashslot777.com" }
+
+# --- 3. FOOTER KOLEKSİYONU ---
+  - name: "footer"
+    label: "Footer Ayarları"
+    format: "json"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - file: "content/footer.json"
+        label: "Footer İçeriği"
+        name: "footercontent"
+        fields:
+          # Sizin orijinal kodunuzda sadece bu alan vardı.
+          - { label: "E-posta", name: "email", widget: "string", default: "iletisim@cashslot777.com" }
+          # Buraya Footer'a ait diğer tüm alanları ekleyebilirsiniz (örneğin copyright metni, navigasyon linkleri vb.)
