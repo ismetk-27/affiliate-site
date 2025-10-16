@@ -1,7 +1,6 @@
 backend:
   name: git-gateway
   branch: main
-# identity_url / gateway_url EKLEME! (origin karışmasın)
 
 media_folder: "assets/img/uploads"
 public_folder: "/assets/img/uploads"
@@ -21,11 +20,12 @@ collections:
         label: "Genel İçerik"
         name: "sitecontent"
         fields:
+          # --- MEVCUT SİTE ALANLARI ---
           - label: "Site Başlığı"
             name: "page_title"
             widget: "string"
             default: "CashSlot \"Kaybedenlerin Kahramanı\""
-
+          
           - label: "Arkaplan Görseli"
             name: "background"
             widget: "object"
@@ -48,13 +48,10 @@ collections:
             fields:
               - { label: "Telegram Sohbet URL", name: "telegram_chat_url", widget: "string", default: "http://t.me/cashslotsohbet" }
               - { label: "Telegram Sohbet İkonu", name: "telegram_chat_icon", widget: "image", default: "assets/icons/telegram1.png" }
-
               - { label: "Telegram Duyuru URL", name: "telegram_announce_url", widget: "string", default: "http://t.me/CashSlotDuyuru" }
               - { label: "Telegram Duyuru İkonu", name: "telegram_announce_icon", widget: "image", default: "assets/icons/telegram2.png" }
-
               - { label: "YouTube 1 URL", name: "youtube1_url", widget: "string", default: "https://www.youtube.com/@Cashslot777" }
               - { label: "YouTube 1 İkonu", name: "youtube1_icon", widget: "image", default: "assets/icons/youtube1.png" }
-
               - { label: "YouTube 2 URL", name: "youtube2_url", widget: "string", default: "https://www.youtube.com/@cashslot7" }
               - { label: "YouTube 2 İkonu", name: "youtube2_icon", widget: "image", default: "assets/icons/youtube2.png" }
 
@@ -102,29 +99,20 @@ collections:
               - { label: "Görsel", name: "img", widget: "image" }
               - { label: "Metin", name: "text", widget: "string" }
 
-# --- 2. POPUP KOLEKSİYONU ---
-           - label: "Popup Ayarları"
-             name: "popup" # <-- JS kodu bu isimle erişecek: data.popup
-             widget: "object"
-             fields:
+          # 🚨 DÜZELTİLMİŞ POPUP AYARLARI (Şimdi site koleksiyonunun içinde)
+          - label: "Popup Ayarları"
+            name: "popup" # <-- JS kodu data.popup ile erişecek
+            widget: "object"
+            fields:
               - { label: "Aktif", name: "enabled", widget: "boolean", default: true }
               - { label: "Görsel", name: "image", widget: "image", default: "assets/img/popup-kampanya.png" }
               - { label: "Bağlantı (Link)", name: "link", widget: "string", default: "https://dng.bet/r/CashSlot777" }
               - { label: "Metin", name: "text", widget: "string", default: "Reklam ve İş Birliği İçin" }
               - { label: "E-posta", name: "email", widget: "string", default: "iletisim@cashslot777.com" }
 
-# --- 3. FOOTER KOLEKSİYONU ---
-           - name: "footer"
-             label: "Footer Ayarları"
-             format: "json"
-             delete: false
-             editor:
-             preview: false
-             files:
-          - file: "content/footer.json"
-            label: "Footer İçeriği"
-            name: "footercontent"
+          # 🚨 DÜZELTİLMİŞ FOOTER AYARLARI (Şimdi site koleksiyonunun içinde)
+          - label: "Footer Ayarları"
+            name: "footer" # <-- JS kodu data.footer ile erişecek
+            widget: "object"
             fields:
-          # Sizin orijinal kodunuzda sadece bu alan vardı.
-           - { label: "E-posta", name: "email", widget: "string", default: "iletisim@cashslot777.com" }
-          # Buraya Footer'a ait diğer tüm alanları ekleyebilirsiniz (örneğin copyright metni, navigasyon linkleri vb.)
+              - { label: "E-posta", name: "email", widget: "string", default: "iletisim@cashslot777.com" }
