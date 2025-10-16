@@ -228,12 +228,12 @@
     <button class="popup-close" onclick="closePopup()">×</button>
 
     <!-- Görselin kendisi tıklanabilir hale geldi -->
-    <a href="{{ popup.link }}" target="_blank" rel="noopener noreferrer">
-      <img src="assets/img/popup-kampanya.png" alt="Kampanya" />
-    </a>
+<a href="{{ site.data.popupcontent.link }}" target="_blank" rel="noopener noreferrer">
+  <img src="assets/img/popup-kampanya.png" alt="Kampanya" />
+</a>
 
-    <p>{{ popup.text }}</p>
-    <a href="mailto:{{ popup.email }}" class="popup-btn">{{ popup.email }}</a>
+<p>{{ site.data.popupcontent.text }}</p>
+<a href="mailto:{{ site.data.popupcontent.email }}" class="popup-btn">{{ site.data.popupcontent.email }}</a>
   </div>
 </div>
 
