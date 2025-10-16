@@ -600,7 +600,7 @@ footer {
 }
 
 .popup-content {
-  background: #121935;
+  background: #0a0f2c;
   border: 3px solid #e0c878;
   padding: 10px;
   border-radius: 12px;
@@ -626,7 +626,7 @@ footer {
 
 .popup-btn {
   background: none;         /* Arka planı kaldır */
-  color: #e0c878;           /* Yazı rengi (altın tonu) */
+  color: rgba(18, 25, 53, 0.95);           /* Yazı rengi (altın tonu) */
   padding: 0;               /* İç boşluk sıfır */
   border-radius: 0;         /* Köşe yumuşatma iptal */
   text-decoration: none;    /* Alt çizgi istemiyorsan */
