@@ -129,22 +129,30 @@
       }
     } catch {}
 
-    // === Popup ===
-    try {
-      const overlay = document.getElementById('popup');
-      if (overlay) {
-        if (data.popup?.enabled === false) {
-          overlay.style.display = 'none';
-        } else {
-          const img = overlay.querySelector('.popup-content img');
-          const p   = overlay.querySelector('.popup-content p');
-          const a   = overlay.querySelector('.popup-content a.popup-btn');
-          if (img && data.popup?.image) img.src = data.popup.image;
-          if (p   && data.popup?.text)  p.textContent = data.popup.text;
-          if (a   && data.popup?.email) { a.textContent = data.popup.email; a.href = 'mailto:' + data.popup.email; }
-        }
-      }
-    } catch {}
+// === Popup ===
+    try {
+      const overlay = document.getElementById('popup');
+      if (overlay) {
+        // ... aktif/pasif kontrolü
+        } else {
+          const linkA = overlay.querySelector('.popup-content a[target="_blank"]'); // Tıklanabilir görselin link etiketi
+          const img = overlay.querySelector('.popup-content img');
+          const p   = overlay.querySelector('.popup-content p');
+          const emailA   = overlay.querySelector('.popup-content a.popup-btn'); // E-posta link etiketi
+
+             // 🚨 BU KISIM ÇOK ÖNEMLİ: Linki JS ile dolduruyoruz
+          if (linkA && data.popup?.link) linkA.href = data.popup.link; 
+
+             // Diğer verilerin doldurulması
+          if (img && data.popup?.image) img.src = data.popup.image;
+          if (p   && data.popup?.text)  p.textContent = data.popup.text;
+          if (emailA   && data.popup?.email) { 
+                emailA.textContent = data.popup.email; 
+                emailA.href = 'mailto:' + data.popup.email; 
+            }
+        }
+      }
+    } catch {}
 
     // === Footer e-posta ===
     try {
