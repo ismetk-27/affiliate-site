@@ -103,22 +103,15 @@ collections:
               - { label: "Metin", name: "text", widget: "string" }
 
 # --- 2. POPUP KOLEKSİYONU ---
-  - name: "popup"
-    label: "Popup Ayarları"
-    format: "json"
-    delete: false
-    editor:
-      preview: false
-    files:
-      - file: "content/popup.json"
-        label: "Popup İçeriği"
-        name: "popupcontent"
-        fields:
-          - { label: "Aktif", name: "enabled", widget: "boolean", default: true }
-          - { label: "Görsel", name: "image", widget: "image", default: "assets/img/popup-kampanya.png" }
-          - { label: "Bağlantı (Link)", name: "link", widget: "string", default: "https://dng.bet/r/CashSlot777" }
-          - { label: "Metin", name: "text", widget: "string", default: "Reklam ve İş Birliği İçin" }
-          - { label: "E-posta", name: "email", widget: "string", default: "iletisim@cashslot777.com" }
+           - label: "Popup Ayarları"
+            name: "popup" # <-- JS kodu bu isimle erişecek: data.popup
+            widget: "object"
+            fields:
+              - { label: "Aktif", name: "enabled", widget: "boolean", default: true }
+              - { label: "Görsel", name: "image", widget: "image", default: "assets/img/popup-kampanya.png" }
+              - { label: "Bağlantı (Link)", name: "link", widget: "string", default: "https://dng.bet/r/CashSlot777" }
+              - { label: "Metin", name: "text", widget: "string", default: "Reklam ve İş Birliği İçin" }
+              - { label: "E-posta", name: "email", widget: "string", default: "iletisim@cashslot777.com" }
 
 # --- 3. FOOTER KOLEKSİYONU ---
   - name: "footer"
