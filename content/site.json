@@ -28,7 +28,7 @@
     "alt": "Logo"
   },
   "popup": {
-    "enabled": true,
+    "enabled": false,
     "image": "/assets/img/uploads/yenn.jpg",
     "text": "REKLAM VE İŞ BİRLİĞİ İÇİN TIKLAYINIZ",
     "email": "https://t.me/Cashslot77",
@@ -67,7 +67,7 @@
     },
     {
       "href": "https://cutt.ly/Vr2JNk93",
-      "hover": "GARANTİ KAZANÇ!",
+      "hover": "GARANTİ KAZANÇ! Deneme",
       "image": "/assets/img/uploads/photo_2025-10-10_12-33-46.jpg",
       "logo": "/assets/img/uploads/logogooooo.png"
     }
