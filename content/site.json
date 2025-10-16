@@ -1,31 +1,5 @@
 {
-  "vip_cards": [
-    {
-      "href": "https://dng.bet/r/CashSlot777",
-      "img": "assets/img/vip1.png",
-      "text": "Deneme değişik"
-    },
-    {
-      "href": "https://dng.bet/r/CashSlot777",
-      "img": "assets/img/vip2.png",
-      "text": " Haftalık %10 Kayıp Bonusu DengeBet'te"
-    },
-    {
-      "href": "https://dng.bet/r/CashSlot777",
-      "img": "assets/img/vip3.png",
-      "text": "Arkadaşını Getir Nakiti Götür! (2000₺)"
-    },
-    {
-      "href": "https://dng.bet/r/CashSlot777",
-      "img": "assets/img/vip4.png",
-      "text": "4 Yatırım Yap 5. Yatırım DengeBet'ten"
-    },
-    {
-      "href": "https://dng.bet/r/CashSlot777",
-      "img": "assets/img/vip5.png",
-      "text": "4 Yatırım Yap 5. Yatırım DengeBet'ten"
-    }
-  ],
+  "vip_cards": [],
   "socials": {
     "telegram_chat_url": "http://t.me/cashslotsohbet",
     "telegram_chat_icon": "assets/icons/telegram1.png",
@@ -39,28 +13,28 @@
   "page_title": "CashSlot \"Kaybedenlerin Kahramanı\"",
   "mobile_banners": [
     {
-      "link": "https://dng.bet/r/CashSlot777",
+      "link": "https://denge.link/Cashslot777",
       "img": "assets/img/mobil-banner1.png",
       "text": "Her Gün Sonu Freespin!"
     },
     {
-      "link": "https://dng.bet/r/CashSlot888",
+      "link": "https://denge.link/Cashslot777",
       "img": "assets/img/mobil-banner2.png",
       "text": "Çekim Sonrası %15 Nakit Kayıp İade"
     }
   ],
   "logo": {
-    "src": "assets/img/analogo.png",
+    "src": "/assets/img/uploads/analogo.png",
     "alt": "Logo"
   },
   "popup": {
     "enabled": true,
-    "image": "assets/img/popup-kampanya.png",
-    "text": "Reklam ve İş Birliği İçin",
-    "email": "iletisim@cashslot777.com"
+    "image": "/assets/img/uploads/yenn.jpg",
+    "text": "REKLAM VE İŞ BİRLİĞİ İÇİN TIKLAYINIZ",
+    "email": "https://t.me/Cashslot77"
   },
   "background": {
-    "image": "assets/img/background.png",
+    "image": "https://stake1070.com/tr?offer=CashSlot777&c=CashSlot777",
     "size": "175px",
     "repeat": "repeat",
     "attachment": "fixed"
@@ -69,23 +43,41 @@
     "enabled": true,
     "text": "Her Gün Sonu Freespin",
     "image": "assets/img/solbanner.png",
-    "href": "https://dng.bet/r/CashSlot777"
+    "href": "https://denge.link/Cashslot777"
   },
   "sponsors": [
     {
-      "href": "https://dng.bet/r/CashSlot777",
+      "href": "https://denge.link/Cashslot777",
       "image": "assets/img/sponsor1.png",
       "hover": "%100 Canlı Casino ve Slot Hoş Geldin Bonusu",
       "logo": "assets/logos/logo1.png"
+    },
+    {
+      "image": "/assets/img/uploads/photo_2025-09-15_00-11-09.jpg",
+      "logo": "/assets/img/uploads/başlıksız-2.png",
+      "href": "https://stake1070.com/tr?offer=CashSlot777&c=CashSlot777",
+      "hover": "DÜNYANIN EN BÜYÜK PLATFORMU SİZLERLE"
+    },
+    {
+      "href": "https://stilbetgir.com/?refId=204",
+      "image": "/assets/img/uploads/stıll.jpg",
+      "logo": "/assets/img/uploads/logo-2-.png",
+      "hover": "500TL DENEME BONUSUNU KAÇIRMA!"
+    },
+    {
+      "href": "https://cutt.ly/Vr2JNk93",
+      "hover": "GARANTİ KAZANÇ!",
+      "image": "/assets/img/uploads/photo_2025-10-10_12-33-46.jpg",
+      "logo": "/assets/img/uploads/logogooooo.png"
     }
   ],
   "right_fixed_banner": {
     "enabled": true,
     "text": "Çekim Sonrası %15 Nakit Kayıp İade",
-    "image": "assets/img/sagbanner.png",
-    "href": "https://dng.bet/r/CashSlot777"
+    "image": "/assets/img/uploads/solbanner.png",
+    "href": "https://denge.link/Cashslot777"
   },
   "footer": {
-    "email": "iletisim@cashslot777.com"
+    "email": "https://t.me/Cashslot77"
   }
 }
