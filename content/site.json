@@ -1,5 +1,11 @@
 {
-  "vip_cards": [],
+  "vip_cards": [
+    {
+      "href": "https://cutt.ly/Vr2JNk93",
+      "img": "/assets/img/uploads/logogooooo.png",
+      "text": "DENEMEYİ UNUTMA!"
+    }
+  ],
   "socials": {
     "telegram_chat_url": "http://t.me/cashslotsohbet",
     "telegram_chat_icon": "assets/icons/telegram1.png",
@@ -64,12 +70,6 @@
       "image": "/assets/img/uploads/stıll.jpg",
       "logo": "/assets/img/uploads/logo-2-.png",
       "hover": "500TL DENEME BONUSUNU KAÇIRMA!"
-    },
-    {
-      "href": "https://cutt.ly/Vr2JNk93",
-      "hover": "GARANTİ KAZANÇ!",
-      "image": "/assets/img/uploads/photo_2025-10-10_12-33-46.jpg",
-      "logo": "/assets/img/uploads/logogooooo.png"
     }
   ],
   "right_fixed_banner": {
